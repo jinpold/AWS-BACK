@@ -8,79 +8,51 @@ insert into users (id, username, password, name, age, sex, email, address, phone
 insert into users (id, username, password, name, age, sex, email, address, phone, asset, mbti, investment_propensity, mod_date, reg_date) values (4, 'lgrishankovm78', 'chlwldus12#', '허민재', '8903241549722', 'male', 'jinpold@gmail.com', '인천광역시 연수구', '010-1535-1177', 8600000, 'ISFJ', '신중함', '2023-12-19 17:33:02', '2023-09-08 08:56:05');
 insert into users (id, username, password, name, age, sex, email, address, phone, asset, mbti, investment_propensity, mod_date, reg_date) values (5, 'aparmitermm191', 'rladudg11#%', '이진성', '7907213548215', 'male', 'alswodnjswo@gmail.com', '경기도 성남시 분당구', '010-7612-9909', 9700000, 'ESTP',  '적극적', '2023-06-02 14:43:32', '2023-10-23 18:24:40');
 
-insert into boards (id, title, description, mod_date, reg_date) values (1, 'Service','ServiceType','2023-05-05 00:10:49', '2024-05-05 00:10:49');
+insert into boards (id, title, description, mod_date, reg_date) values (1, 'Study','StudyType','2023-05-05 00:10:49', '2024-05-05 00:10:49');
 insert into boards (id, title, description, mod_date, reg_date) values (2, 'QNA','QNAType','2023-09-30 08:20:52', '2023-12-05 00:12:51');
 
-insert into articles (id, title, content, writer_id, board_id, mod_date, reg_date) values (1, '고객센터 문의', '계정 관련 문의합니다.', 2, 1, '2023-05-05 00:10:49', '2024-02-28 04:32:04');
-insert into articles (id, title, content, writer_id, board_id, mod_date, reg_date) values (2, 'Q&A 자주 물어보는 질문', '계좌마다 투자방식이 다른가요?', 5, 2, '2023-04-14 12:07:46', '2023-09-30 08:20:52');
-insert into articles (id, title, content, writer_id, board_id, mod_date, reg_date) values (3, 'Q&A 자주 물어보는 질문', '해외투자는 어떻게 하나요?', 4, 2, '2024-01-16 19:23:29', '2024-01-29 03:11:26');
-insert into articles (id, title, content, writer_id, board_id, mod_date, reg_date) values (4, 'Q&A 자주 물어보는 질문', '세금은 어떻게 처리되나요?', 3, 2, '2024-01-06 16:32:58', '2023-09-19 15:03:49');
-insert into articles (id, title, content, writer_id, board_id, mod_date, reg_date) values (5, '고객센터 문의', '비밀번호 관련 문의합니다.', 1, 1, '2023-12-02 05:19:43', '2024-01-06 04:44:20');
-insert into articles (id, title, content, writer_id, board_id, mod_date, reg_date) values (6, '고객센터 문의', '계좌 관련 문의합니다.', 2, 1, '2023-04-13 23:03:48', '2024-03-10 03:25:24');
-insert into articles (id, title, content, writer_id, board_id, mod_date, reg_date) values (7, 'Q&A 자주 물어보는 질문', '연말정산 혜택은 무엇이 있나요?', 3, 2, '2023-08-22 22:35:11', '2023-07-06 06:42:17');
-insert into articles (id, title, content, writer_id, board_id, mod_date, reg_date) values (8, '고객센터 문의', '계좌를 없애고 싶습니다.', 4, 1, '2023-07-29 19:26:59', '2024-04-05 22:11:04');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (9, '고객센터 문의', '다른 증권사로 옮기고 싶어요', 2, 1, '2023-06-21 16:58:36', '2023-10-24 02:38:07');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (10, 'Q&A 자주 물어보는 질문', '국내주식과 해외주식 투자 방법 문의', 3, 2, '2023-08-10 12:39:39', '2023-06-22 12:28:10');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (11, 'Q&A 자주 물어보는 질문', '주식 투자 조언을 받을 수 있나요?', 2, 2, '2023-12-27 21:43:35', '2023-07-16 22:14:00');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (12, 'Q&A 자주 물어보는 질문', '연금계좌는 어떻게 개설하나요?', 3, 2, '2023-10-22 07:19:26', '2023-07-31 06:54:25');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (13, 'Q&A 자주 물어보는 질문', '일반 계좌와 연금계좌의 차이가 뭔가요?', 2, 2, '2023-07-28 16:21:23', '2024-02-28 09:10:53');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (14, '고객센터 문의', '연금계좌 해지 문의', 2, 1, '2024-03-10 12:34:41', '2024-02-13 13:15:06');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (15, '고객센터 문의', '선물 파생상품 문의', 2, 1, '2023-10-24 07:23:49', '2023-09-06 12:29:18');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (16, '고객센터 문의', '계좌를 해지하고 다시 만들고 싶어요', 3, 1, '2024-02-10 10:53:34', '2023-04-28 19:21:10');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (17, 'Q&A 자주 물어보는 질문', '보이스 피싱 관련 문의', 5, 2, '2024-01-09 17:52:26', '2024-01-03 06:33:31');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (18, 'Q&A 자주 물어보는 질문', '계좌 정지 관련 문의', 4, 2, '2023-07-22 14:50:33', '2024-03-18 03:17:18');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (19, 'Q&A 자주 물어보는 질문', 'OTP 보안카드 문의', 4, 2, '2023-12-01 13:20:30', '2023-10-28 16:37:09');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (20, '고객센터 문의', '해외 주식 관련 문의합니다.', 3, 1, '2023-04-29 07:02:51', '2023-06-22 01:45:42');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (21, 'Q&A 자주 물어보는 질문', '주식 장 마감 시간 문의', 2, 2, '2023-06-02 14:43:32', '2023-10-23 18:24:40');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (22, 'Q&A 자주 물어보는 질문', '국내와 해외 마감 시간 문의', 2, 2, '2023-08-29 22:58:08', '2024-03-11 10:26:45');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (23, 'Q&A 자주 물어보는 질문', '계좌 정지 관련 문의', 5, 2, '2024-03-11 00:53:52', '2023-12-08 13:55:58');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (24, '고객센터 문의', '선물 파생상품 문의', 3, 1, '2024-01-17 22:53:07', '2023-05-14 16:45:59');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (25, '고객센터 문의', '세금 관련 문의해요.', 5, 2, '2023-12-28 07:28:56', '2023-12-26 21:35:59');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (26, '고객센터 문의', '연말 정산 관련 문의해요', 5, 1, '2023-06-29 06:49:05', '2024-04-02 19:53:42');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (27, 'Q&A 자주 물어보는 질문', '해외주식 투자 방법 문의', 3, 2, '2023-12-22 18:46:27', '2023-07-21 05:30:17');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (28, 'Q&A 자주 물어보는 질문', '국내와 해외 마감 시간 문의', 5, 2, '2023-11-10 15:22:42', '2023-06-06 14:24:05');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (29, '고객센터 문의', '지점 방문 상담 문의', 4, 1, '2023-05-16 19:13:17', '2023-04-13 16:15:22');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (30, 'Q&A 자주 물어보는 질문', 'ISA 계좌 문의', 4, 2, '2023-07-17 06:55:36', '2023-07-12 21:56:55');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (31, '고객센터 문의', '영업 관련 문의', 5, 1, '2023-09-17 01:43:42', '2024-03-12 11:57:48');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (32, 'Q&A 자주 물어보는 질문', '연금 계좌에 대해 알고 싶어요', 3, 2, '2023-04-19 18:02:02', '2023-04-16 17:59:00');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (33, '고객센터 문의', '지점 방문 상담 관련 문의', 1, 1, '2023-05-16 15:50:02', '2023-12-06 12:59:44');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (34, 'Q&A 자주 물어보는 질문', '법인 회사 투자 관련 문의', 3, 2, '2024-03-10 20:37:46', '2024-01-05 11:22:55');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (35, '고객센터 문의', '비밀번호 5회 이상 틀렸어요', 3, 2, '2024-01-31 10:31:58', '2023-08-24 06:03:54');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (36, '고객센터 문의', '계정이 잠겼어요', 1, 1, '2023-04-08 18:34:19', '2023-12-31 06:36:58');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (37, 'Q&A 자주 물어보는 질문', '투자 조언 받고 싶어요', 4, 2, '2023-06-19 23:44:50', '2023-09-25 18:22:19');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (38, 'Q&A 자주 물어보는 질문', '개인 투자자 & 법인 투자자 관련 문의', 1, 2, '2023-08-10 14:42:53', '2023-10-28 13:09:30');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (39, '고객센터 문의', '계좌 정지 문의', 5, 1, '2023-09-05 05:35:25', '2023-05-15 04:06:55');
-insert into articles (id
-                     , title, content, writer_id, board_id, mod_date, reg_date) values (40, '고객센터 문의', '선물 파생상품 문의', 1, 1, '2024-01-28 19:22:05', '2024-03-16 21:14:17');
+-- 스터디 모집 게시판 (board_id = 1)
+INSERT INTO articles (id, title, content, writer_id, board_id, mod_date, reg_date) VALUES
+                                                                                       (1, 'React 스터디 모집', 'React 기초부터 심화까지 함께 공부할 팀원을 모집합니다.', 2, 1, NOW(), NOW()),
+                                                                                       (2, 'Java 백엔드 스터디', 'Spring Boot 기반 백엔드 개발 스터디를 진행합니다.', 3, 1, NOW(), NOW()),
+                                                                                       (3, 'Python 알고리즘 스터디', '코딩 테스트 준비를 위한 알고리즘 문제 풀이 스터디입니다.', 4, 1, NOW(), NOW()),
+                                                                                       (4, 'SQL 데이터베이스 스터디', 'SQL 기본 문법과 실무 활용에 대한 스터디를 진행합니다.', 5, 1, NOW(), NOW()),
+                                                                                       (5, '토익 스터디 모집', '매일 단어와 모의고사를 함께 준비할 팀원을 모집합니다.', 1, 1, NOW(), NOW()),
+                                                                                       (6, '일본어 회화 스터디', '일본어 기초 회화 공부를 위한 팀원 모집합니다.', 2, 1, NOW(), NOW()),
+                                                                                       (7, '프론트엔드 개발 스터디', 'React와 Vue.js를 함께 공부할 팀원을 모집합니다.', 3, 1, NOW(), NOW()),
+                                                                                       (8, '데이터 분석 스터디', 'Python과 R을 활용한 데이터 분석 스터디입니다.', 4, 1, NOW(), NOW()),
+                                                                                       (9, '경영학 스터디 모집', '경영학 핵심 이론을 함께 공부할 팀원을 모집합니다.', 5, 1, NOW(), NOW()),
+                                                                                       (10, '공인중개사 자격증 스터디', '공인중개사 시험 준비 스터디를 모집합니다.', 1, 1, NOW(), NOW()),
+                                                                                       (11, '영어 스피킹 스터디', '영어 면접 대비 및 일상 회화 연습 스터디입니다.', 2, 1, NOW(), NOW()),
+                                                                                       (12, '독서 스터디', '매주 한 권의 책을 읽고 함께 토론할 팀원을 모집합니다.', 3, 1, NOW(), NOW()),
+                                                                                       (13, '블록체인 스터디 모집', '블록체인 기술과 실습을 함께 공부할 팀원을 찾습니다.', 4, 1, NOW(), NOW()),
+                                                                                       (14, 'UI/UX 디자인 스터디', 'Figma와 Adobe XD를 활용한 디자인 스터디입니다.', 5, 1, NOW(), NOW()),
+                                                                                       (15, '크로스핏 운동 스터디', '주말마다 크로스핏 운동을 함께할 팀원을 모집합니다.', 1, 1, NOW(), NOW()),
+                                                                                       (16, '주식 투자 스터디', '기초적인 주식 투자 전략을 함께 공부합니다.', 2, 1, NOW(), NOW()),
+                                                                                       (17, '영화 감상 스터디', '매주 영화를 보고 리뷰를 작성하는 스터디입니다.', 3, 1, NOW(), NOW()),
+                                                                                       (18, '리눅스 서버 스터디', '리눅스 서버 운영 및 네트워크 설정을 배우는 스터디입니다.', 4, 1, NOW(), NOW()),
+                                                                                       (19, '창업 스터디 모집', '스타트업 창업에 관심 있는 분들을 위한 스터디입니다.', 5, 1, NOW(), NOW()),
+                                                                                       (20, '인공지능(AI) 스터디', '머신러닝과 딥러닝 실습을 함께 진행할 팀원을 찾습니다.', 1, 1, NOW(), NOW());
 
+-- Q&A 게시판 (board_id = 2)
+INSERT INTO articles (id, title, content, writer_id, board_id, mod_date, reg_date) VALUES
+                                                                                       (21, '스터디 모집 글 작성 팁이 있나요?', '관심을 끌 수 있는 글을 작성하는 팁이 궁금합니다.', 2, 2, NOW(), NOW()),
+                                                                                       (22, '스터디 팀원 모집 기준은 무엇인가요?', '스터디 팀원을 뽑을 때 중점적으로 고려해야 할 점이 있을까요?', 3, 2, NOW(), NOW()),
+                                                                                       (23, '스터디 불참자 대처법', '스터디에서 팀원이 자주 불참할 때 어떻게 해결해야 할까요?', 4, 2, NOW(), NOW()),
+                                                                                       (24, '비대면 스터디 진행 팁', '줌을 활용한 비대면 스터디의 효과적인 진행 방법을 알고 싶습니다.', 5, 2, NOW(), NOW()),
+                                                                                       (25, '스터디 시간 조율이 어렵습니다.', '여러 사람의 일정을 맞출 때 유용한 도구나 방법이 있을까요?', 1, 2, NOW(), NOW()),
+                                                                                       (26, '스터디 자료 공유 방법', '효율적으로 자료를 공유하고 관리하는 방법을 추천해주세요.', 2, 2, NOW(), NOW()),
+                                                                                       (27, '스터디 리더의 역할은 무엇인가요?', '리더로서 어떤 책임과 역할이 필요한지 궁금합니다.', 3, 2, NOW(), NOW()),
+                                                                                       (28, '오프라인 스터디 장소 추천', '조용하고 접근성 좋은 스터디 장소를 추천해주세요.', 4, 2, NOW(), NOW()),
+                                                                                       (29, '스터디원간의 의견 충돌 해결법', '스터디 도중 의견이 맞지 않을 때 해결하는 방법이 궁금합니다.', 5, 2, NOW(), NOW()),
+                                                                                       (30, '효율적인 학습 방법이 있나요?', '스터디 시간 동안 집중력을 높이는 학습 방법을 추천해주세요.', 1, 2, NOW(), NOW()),
+                                                                                       (31, '영어 회화 스터디에 대한 팁', '영어 회화 실력을 늘리기 위한 실전 팁이 궁금합니다.', 2, 2, NOW(), NOW()),
+                                                                                       (32, '스터디원 모집 공고 작성 방법', '매력적인 모집 공고를 작성하는 방법을 공유해주세요.', 3, 2, NOW(), NOW()),
+                                                                                       (33, '스터디 목표 설정하는 법', '스터디 목표를 어떻게 설정하면 좋을지 알고 싶습니다.', 4, 2, NOW(), NOW()),
+                                                                                       (34, '스터디 그룹 인원은 몇 명이 적당할까요?', '스터디를 효율적으로 운영하기 위한 최적의 인원 수는 몇 명일까요?', 5, 2, NOW(), NOW()),
+                                                                                       (35, '스터디 중간에 팀원을 교체할 수 있나요?', '팀원 교체를 고려할 때 필요한 절차나 주의사항이 있나요?', 1, 2, NOW(), NOW()),
+                                                                                       (36, '스터디 비용 분담 방법', '스터디에 필요한 비용을 팀원들과 어떻게 분담하면 좋을까요?', 2, 2, NOW(), NOW()),
+                                                                                       (37, '스터디 계획표 작성 팁', '스터디의 장기적인 계획을 세우는 방법을 추천해주세요.', 3, 2, NOW(), NOW()),
+                                                                                       (38, '스터디 마무리 단계에서 할 일', '스터디가 끝난 후 해야 할 정리 작업이 궁금합니다.', 4, 2, NOW(), NOW()),
+                                                                                       (39, '스터디 피드백 수집 방법', '스터디원들로부터 피드백을 효과적으로 수집하는 방법이 궁금합니다.', 5, 2, NOW(), NOW()),
+                                                                                       (40, '온라인 스터디 툴 추천', '효율적인 온라인 스터디를 위한 툴이나 프로그램을 추천해주세요.', 1, 2, NOW(), NOW());

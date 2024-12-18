@@ -84,15 +84,26 @@ public class UserServiceImpl implements UserService {
     @Transactional
     @Override
     public Messenger modify(UserDto userDto) {
-        User user = userRepository.findById(userDto.getId()).get();
-        if (userDto.getUsername() != null && !userDto.getUsername().equals("")) {
+        User user = userRepository.findById(userDto.getId()).orElseThrow(
+                () -> new RuntimeException("User not found")
+        );
+
+        if (userDto.getUsername() != null && !userDto.getUsername().trim().isEmpty()) {
             user.setUsername(userDto.getUsername());
         }
-        user.setName(userDto.getName());
-        user.setPassword(userDto.getPassword());
-        user.setAddress(userDto.getAddress());
-        user.setPhone(userDto.getPhone());
-        userRepository.save(user);
+        if (userDto.getName() != null && !userDto.getName().trim().isEmpty()) {
+            user.setName(userDto.getName());
+        }
+        if (userDto.getPassword() != null && !userDto.getPassword().trim().isEmpty()) {
+            user.setPassword(userDto.getPassword());
+        }
+        if (userDto.getAddress() != null && !userDto.getAddress().trim().isEmpty()) {
+            user.setAddress(userDto.getAddress());
+        }
+        if (userDto.getPhone() != null && !userDto.getPhone().trim().isEmpty()) {
+            user.setPhone(userDto.getPhone());
+        }
+
 
         return userRepository.findById(userDto.getId()).get().equals(user) ?
                 Messenger.builder().message("SUCCESS").build() :

@@ -1,5 +1,6 @@
 package com.james.api.common.security.model.service;
 import com.james.api.common.component.Messenger;
+import com.james.api.user.model.User;
 import com.james.api.user.model.UserDto;
 import com.james.api.user.repository.UserRepository;
 import io.jsonwebtoken.Claims;
@@ -7,7 +8,6 @@ import io.jsonwebtoken.Jwts;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
-import java.time.LocalDateTime;
 
 
 @Log4j2
@@ -21,8 +21,13 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public Messenger login(UserDto dto) {
 
-        boolean flag = repository.findUserByUsername
-                (dto.getUsername()).get().getPassword().equals(dto.getPassword());
+        User user = repository.findUserByUsername(dto.getUsername())
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        boolean flag = user.getPassword().equals(dto.getPassword());
+
+        // UserDto에 id 값 설정
+        dto.setId(user.getId());
 
         return Messenger.builder()
                 .message(flag ? "SUCCESS" : "FAILURE")
@@ -31,8 +36,12 @@ public class AuthServiceImpl implements AuthService {
     }
     @Override
     public String createToken(UserDto user) {
+        if (user.getId() == null) {
+            throw new IllegalArgumentException("User ID cannot be null");
+        }
         Claims claims = (Claims) Jwts.claims();
         claims.put("username", user.getUsername());
+        claims.put("userId", user.getId());
 
 
 
