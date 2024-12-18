@@ -41,7 +41,7 @@ public class AuthServiceImpl implements AuthService {
         }
         Claims claims = (Claims) Jwts.claims();
         claims.put("username", user.getUsername());
-        claims.put("userId", user.getId());
+        claims.put("id", user.getId());
 
 
 
@@ -49,7 +49,7 @@ public class AuthServiceImpl implements AuthService {
                 .claims()
                 .add("iss", "james.co.kr")
                 .add("sub", "user Auth")
-                .add("userId", user.getId())
+                .add("id", user.getId())
                 .add("username", user.getUsername())
                 .add("job", "admin") // 관리자(ad), 소비자
                 .and()
